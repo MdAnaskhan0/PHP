@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect css -->
+     <link rel="stylesheet" href="./styles.css">
+    <title>User Sign up form</title>
+  </head>
+  <body>
+    <!-- SignUp Form -->
+    <form action="./signUp.php" method="post">
+      <h3>Registration</h3>
+      <p>Personal Details</p>
+      <label for="name">Full Name</label>
+      <input type="text" name="name" placeholder="Enter user name" />
+
+      <label for="dob">Date of birth</label>
+      <input type="date" name="date" placeholder="Enter birth date">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter email address">
+      
+      <label for="phone">Mobile number</label>
+      <input type="text" name="phone" placeholder="Enter mobile number">
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" value="male"><span>Male</span>
+      <input type="radio" name="gender" value="Female"><span>Female</span>
+
+      <label for="job">Occupation</label>
+      <select name="job">
+        <option>Select your occupation</option>
+        <option value="frontend_developer">Frontend Developer</option>
+        <option value="backend_developer">Backend Developer</option>
+        <option value="fullstack_developer">FullStack Developer</option>
+      </select>
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
